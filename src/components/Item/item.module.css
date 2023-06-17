@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main h2,
+main p,
+main b {
+  margin: 10px 20px;
+}
+main b {
+  color: #5fa36a;
+}
+
+.item {
+  width: 31%;
+  margin-bottom: 50px;
+  background: #700508;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #000000;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  position: relative;
+  padding-bottom: 20px;
+}
+.item img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+.plas {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: red;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 400;
+  transition: transform 500ms ease;
+}
+.plas:hover {
+  transform: scale(1.3) translateY(-5px);
+}

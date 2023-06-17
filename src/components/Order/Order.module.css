@@ -1,0 +1,27 @@
+.item {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+.item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+.h {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.b {
+  color: #929292;
+  font-weight: 600;
+}
+.delet {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+.delet:hover {
+  color: black;
+  transform: scale(1.3);
+}

@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import Item from "../Item/item";
 
 export class items extends Component {
   render() {
     return (
       <main>
         {this.props.items.map((el) => (
-          <h1>{el.title}</h1>
+          <Item
+            onShowItem={this.props.onShowItem}
+            key={el.id}
+            item={el}
+            onAdd={this.props.onAdd}
+          />
         ))}
       </main>
     );
