@@ -1,4 +1,11 @@
 .txt {
   text-align: center;
   margin-top: 10px;
+  height: 1px;
+  padding: 10px;
+  border-top: 1px solid #ffffff;
+}
+.text {
+  text-align: center;
+  margin-top: 5px;
 }

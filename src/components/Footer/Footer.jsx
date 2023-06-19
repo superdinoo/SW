@@ -3,7 +3,10 @@ import style from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer>
-      <div className={style.txt}>Все права защищены &copy;</div>
+      <p className={style.txt}>
+        Sky Sweets - Уникальный магазин импортных сладостей.
+        <p className={style.text}>Все права защищены &copy;</p>
+      </p>
     </footer>
   );
 };

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import style from "./Categories.module.css";
+import OneCategories from "../OneCategories";
 
 export class Categories extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class Categories extends Component {
           id: 1,
           key: "all",
           name: "Все",
-          img: "1.jpg",
+          img: "10.jpg",
         },
         {
           id: 2,
@@ -48,7 +49,7 @@ export class Categories extends Component {
             key={el.key}
             onClick={() => this.props.chooseCategory(el.key)}
           >
-            {el.name}
+            <OneCategories key={el.key} categorie={el}></OneCategories>
           </div>
         ))}
       </div>
